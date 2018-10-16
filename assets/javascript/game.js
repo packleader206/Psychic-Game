@@ -32,8 +32,8 @@ var hint = document.getElementById("hintText");
 //function runs when user presses a key
 document.onkeyup = function(event) {
     
-    //user selection 
-    var userGuess = event.key;
+    //user selection - convert to lower case
+    var userGuess = event.key.toLowerCase();
     
     //computer selection randomly generated referencing the data in the 'choices' array
     var computerGuess = choices[Math.floor(Math.random() * choices.length)];
